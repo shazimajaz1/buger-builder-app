@@ -1,21 +1,22 @@
 import React from 'react'
 import classes from './Burger.css'
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
-const burger = (props) =>{
+
+const burger = (props) => {
     //Map the object into the array
     let transformedIngredients = Object.keys(props.ingredients)
         .map(igKey => {
-            return [...Array(props.ingredients[igKey])].map((_, index)=> {
+            return [...Array(props.ingredients[igKey])].map((_, index) => {
                 return <BurgerIngredient key={igKey + index} type={igKey}/>
             })
-        }).reduce((arr, el) =>{
+        }).reduce((arr, el) => {
             return arr.concat(el)
-        },[]);
+        }, []);
     console.log(transformedIngredients);
 
 
     //Return the array between the burgers
-    if(transformedIngredients.length === 0){
+    if (transformedIngredients.length === 0) {
         transformedIngredients = <p>Please start adding Ingredients!</p>
     }
     return (

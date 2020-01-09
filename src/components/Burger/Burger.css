@@ -8,14 +8,15 @@
     font-size: 1.2rem;
     -ms-overflow-style: none;
 }
+
 .Burger::-webkit-scrollbar {
     display: none;
 }
 
 
 /*For bigger screens such as computers and tablet*/
-@media (min-width: 1000px) and (min-height:700px){
-    .Burger{
+@media (min-width: 1000px) and (min-height: 700px) {
+    .Burger {
         width: 700px;
         height: 600px;
     }
@@ -23,7 +24,7 @@
 
 /*For Mobile Device in portrait mode*/
 @media (min-width: 500px) and (min-height: 401px) {
-    .Burger{
+    .Burger {
         width: 450px;
         height: 400px;
     }
@@ -31,7 +32,7 @@
 
 /*For Mobile Device in Landscape Mode*/
 @media (min-width: 500px) and (min-height: 400px) {
-    .Burger{
+    .Burger {
         width: 350px;
         height: 300px;
     }

@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import classes from './BurgerIngredient.css'
 import PropTypes from 'prop-types'
+
 /*
     This functions returns the new JSX for the ingredients.
  */
-class BurgerIngredient extends Component{
+class BurgerIngredient extends Component {
     render() {
         let ingredient = null;
 
@@ -47,7 +48,7 @@ class BurgerIngredient extends Component{
 //a string is passed.
 //This will throw a warning indicating to the user that the the type of prop passed
 //should be a string.
-BurgerIngredient.propTypes={
+BurgerIngredient.propTypes = {
     type: PropTypes.string.isRequired
 };
 export default BurgerIngredient;
